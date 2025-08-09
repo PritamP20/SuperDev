@@ -1,0 +1,17 @@
+[package]
+name = "program"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+
+[dependencies]
+anchor-lang = { path = "0.31.1", features = [ #update the path with the local built anchor repo path directiing tot he lang folder, this assing wiill hel pin continubtin to the anchor project
+    "derive",
+    "event-cpi",
+    "interface-instructions",
+    "idl-build",
+    "anchor-debug",
+    "init-if-needed",
+    "allow-missing-optionals",
+] }
